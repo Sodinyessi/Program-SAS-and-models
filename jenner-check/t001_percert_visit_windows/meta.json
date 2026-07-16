@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_percert_visit_windows",
+  "source_file": "percert.sas",
+  "source_blob_sha": "aa12a98c969d27ce8576acc527b9f1455f83ed58",
+  "source_commit": "72fed0993a031b4d3edf2ac7494f12c6c1c6f668",
+  "notes": "Lines 1-55 of percert.sas: filters immuno.labpat to CD4-percentage rows (cd4_U=2), drops outlier values, buckets each measurement into a visit window (M0/M6/M12/.../M60) from mes_delai, then keeps the measurement nearest the window midpoint per patient per window. Original reads immuno.labpat (built in immuno.sas from a LIBNAME'd clinical data drive); a mock labpat with the same 4 columns (UID, cd4_U, cd4_v, mes_delai) is supplied inline at the top of script.sas (so the bundle is runnable standalone via a script-only POST), including a couple of patients with two measurements in the same window to exercise the nearest-measurement tie-break. autoexec.sas carries only the obs=100 cap. Only edit: source table swapped from immuno.labpat to the inline mock labpat."
+}

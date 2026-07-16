@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_immuno_mixed_model_cd4_gain",
+  "source_file": "immuno.sas",
+  "source_blob_sha": "9cbef8404a20bd7de0d956820fd279678093290c",
+  "source_commit": "72fed0993a031b4d3edf2ac7494f12c6c1c6f668",
+  "notes": "Lines 638-641 of immuno.sas: the univariate PROC MIXED model at the core of this repo's mixed-model analyses -- a piecewise-linear (T1/T2) random-slopes model of CD4 gain (D_CD4) over time since ART start, per-patient random effects (type=UN), plus a custom ESTIMATE statement for 12-month gain. Original fits against abs_finale_24 (built earlier in immuno.sas from immuno.labpat, itself built from a LIBNAME'd clinical drive); a small longitudinal mock table with the same columns (UID, D_CD4, T1, T2) -- six patients x four visits each -- is supplied inline so PROC MIXED has real within-patient variation to fit against. Only edit: source table swapped to the inline mock; model statement, random statement and estimate unchanged."
+}
