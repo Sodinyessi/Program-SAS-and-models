@@ -1,0 +1,18 @@
+{
+  "_captured_at": "2026-07-16T06:53:51Z",
+  "_captured_run_id": "r_35d079ca92cb41eeab610daafe29e573",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote abs_finale_24 (24 rows, 4 columns).",
+    "NOTE: PROC MIXED data=abs_finale_24"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

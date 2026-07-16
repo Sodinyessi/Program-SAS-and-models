@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_percert_who_classification",
+  "source_file": "percert.sas",
+  "source_blob_sha": "aa12a98c969d27ce8576acc527b9f1455f83ed58",
+  "source_commit": "72fed0993a031b4d3edf2ac7494f12c6c1c6f668",
+  "notes": "Lines 150-231 of percert.sas: computes patient age at ART start, bands it into WHO age classes, recodes a sentinel WHO-stage value, and applies the WHO pediatric CD4%-by-age immunosuppression classification (cd4_cl 1-3), each step followed by the PROC FREQ/PROC MEANS/PROC UNIVARIATE descriptive block the original runs. Original reads patients_perct (built earlier in the same script from immuno.labpat); a mock patient-level table with the same columns (birth_d, art_sd, center, country, gender, stage_WHO_ART, Hb_ART, cd4_v) is supplied inline, with SAS date literals for birth_d/art_sd read via a colon-modified date9. informat so age computes as a real elapsed-time value. Only edit: source table swapped to the inline mock; no logic changed."
+}

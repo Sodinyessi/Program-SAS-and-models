@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-16T06:53:51Z",
+  "_captured_run_id": "r_e36e8fcb61274f769750912253f35066",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DATA patients_perct",
+    "NOTE: PROC FREQ statement used.",
+    "NOTE: PROC MEANS statement used."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

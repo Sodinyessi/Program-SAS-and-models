@@ -1,0 +1,59 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA abs_finale_24
+
+NOTE: Processing inline DATALINES (24 lines)
+
+NOTE: Read 24 rows from DATALINES.
+NOTE: Wrote abs_finale_24 (24 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MIXED data=abs_finale_24
+
+NOTE: PROC MIXED: using Python wrapper (mixed_renderer.py).
+NOTE: PROC MIXED results written to: ./ods_output/mixed_results.spec.json
+NOTE: Formula: D_CD4 ~ T1 + T2 - 1
+NOTE: Group variable: UID
+NOTE: Estimation method: ML (reml=False)
+NOTE: <jenner-runtime>: RuntimeWarning: invalid value encountered in scalar subtract
+NOTE:   p = (x - v) * tmp2 - (x - w) * tmp1
+NOTE: <jenner-runtime>: RuntimeWarning: invalid value encountered in scalar subtract
+NOTE:   tmp2 = 2.0 * (tmp2 - tmp1)
+NOTE: <jenner-runtime>: RuntimeWarning: invalid value encountered in scalar subtract
+NOTE:   tmp2 = (x - v) * (fx - fw)
+NOTE: <jenner-runtime>: RuntimeWarning: invalid value encountered in scalar subtract
+NOTE:   tmp1 = (x - w) * (fx - fv)
+NOTE: <jenner-runtime>: RuntimeWarning: invalid value encountered in subtract
+NOTE:   np.max(np.abs(fsim[0] - fsim[1:])) <= fatol):
+NOTE: 
+NOTE: Mixed Linear Model Results:
+NOTE:           Mixed Linear Model Regression Results
+NOTE: =========================================================
+NOTE: Model:             MixedLM  Dependent Variable:  D_CD4   
+NOTE: No. Observations:  24       Method:              ML      
+NOTE: No. Groups:        6        Scale:               47.6209 
+NOTE: Min. group size:   4        Log-Likelihood:      -93.8243
+NOTE: Max. group size:   4        Converged:           No      
+NOTE: Mean group size:   4.0                                   
+NOTE: ---------------------------------------------------------
+NOTE:                Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+NOTE: ---------------------------------------------------------
+NOTE: T1             17.338    1.771  9.788 0.000 13.866 20.810
+NOTE: T2              6.736    0.626 10.769 0.000  5.510  7.962
+NOTE: Group Var       7.486                                    
+NOTE: Group x T1 Cov -0.607    3.369                           
+NOTE: T1 Var         17.727    1.977                           
+NOTE: Group x T2 Cov  0.173    1.123                           
+NOTE: T1 x T2 Cov     5.344    0.475                           
+NOTE: T2 Var          1.687    0.220                           
+NOTE: =========================================================
+NOTE: 
+NOTE: Results written to: ./ods_output/mixed_results.json
+NOTE: ODS plot written: mixed_residuals_vs_predicted.spec.json
+NOTE: ODS plot written: mixed_residual_histogram_panel.spec.json
+NOTE: ODS plot written: mixed_residuals_vs_obs_order.spec.json
+NOTE: ODS plot written: mixed_qq_plot.spec.json
+NOTE: ODS plot written: mixed_diagnostics.spec.json
+NOTE: PROC MIXED ODS Graphics generated.
